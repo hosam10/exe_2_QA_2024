@@ -18,65 +18,79 @@ public class AppTest {
 	
 //	assertEquals => ensures the output matches the expected value.
 
+	//EX1
 	@Test
     public void testTC1() {
-        assertEquals("Real roots", tester.classifyRoots(5, 5, 5)); // Failures
-//        assertEquals("Real roots", tester.classifyRoots(5, 15, 10)); // Its without failures
+        assertEquals("Imaginary roots", tester.classifyRoots(5, 15, 15));
     }
 
     @Test
     public void testTC2() {
-        assertEquals("Real roots", tester.classifyRoots(6, 6, 6)); // Failures
-//        assertEquals("Real roots", tester.classifyRoots(6, 16, 10)); // // Its without failures
-
+        assertEquals("Real roots", tester.classifyRoots(6, 61, 16)); 
     }
 
     @Test
     public void testTC3() {
-        assertEquals("Real roots", tester.classifyRoots(25, 100, 75));
+        assertEquals("Imaginary roots", tester.classifyRoots(199, 100, 75));
     }
 
     @Test
     public void testTC4() {
-        assertEquals("Imaginary roots", tester.classifyRoots(199, 199, 199));
+        assertEquals("Imaginary roots", tester.classifyRoots(200, 5, 18));
     }
 
     @Test
     public void testTC5() {
-        assertEquals("Imaginary roots", tester.classifyRoots(200, 200, 200));
+        assertEquals("Imaginary roots", tester.classifyRoots(15, 5, 150));
     }
 
     @Test
     public void testTC6() {
-        assertEquals("Error: Out of range", tester.validateInput(203, 202, 201));
+        assertEquals("Imaginary roots", tester.classifyRoots(66, 6, 100));
     }
 
     @Test
     public void testTC7() {
-        assertEquals("Error: Out of range", tester.validateInput(204, 203, 202));
+        assertEquals("Real roots", tester.classifyRoots(12, 199, 66));
     }
 
     @Test
     public void testTC8() {
-        assertEquals("Error: Out of range", tester.validateInput(240, 235, 230));
+        assertEquals("Real roots", tester.classifyRoots(77, 200, 100));
     }
 
     @Test
     public void testTC9() {
-        assertEquals("Error: Out of range", tester.validateInput(4, 4, 4));
+        assertEquals("Real roots", tester.classifyRoots(41, 44, 5));
     }
 
     @Test
     public void testTC10() {
-        assertEquals("Error: Out of range", tester.validateInput(3, 3, 3));
+        assertEquals("Imaginary roots", tester.classifyRoots(77, 35, 6));
     }
     
     @Test
     public void testTC11() {
-        assertEquals("Not a quadratic equation", tester.classifyRoots(0, 3, 4));
+        assertEquals("Imaginary roots", tester.classifyRoots(98, 43, 199));
+    }
+
+    @Test
+    public void testTC12() {
+        assertEquals("Imaginary roots", tester.classifyRoots(44, 21, 200));
     }
     
+    @Test
+    public void testTC13() {
+        assertEquals("Imaginary roots", tester.classifyRoots(100, 100, 100));
+    }
     
+    @Test
+    public void testTC14() {
+        assertEquals("Not a quadratic equation", tester.classifyRoots(0, 5, 199));
+    }
+ 
+ 	
+    //EX2
     @Test
     public void TC1() {
         assertEquals("Not a Triangle", tester.classifyTriangle(2, 2, 5));

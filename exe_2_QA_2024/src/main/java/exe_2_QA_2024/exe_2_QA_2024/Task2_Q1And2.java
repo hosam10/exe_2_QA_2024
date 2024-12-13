@@ -10,7 +10,8 @@ public class Task2_Q1And2 {
         }
 
         int discriminant = (b * b) - (4 * a * c);
-        System.out.println(discriminant);
+        System.out.println("a = " + a + "  b = " +b + "  c"+c);
+        
 
         if (discriminant > 0) {
             return "Real roots";
@@ -24,7 +25,7 @@ public class Task2_Q1And2 {
 
     public String validateInput(int a, int b, int c) {
     	boolean ch = a < 5 || a > 200 || b < 5 || b > 200 || c < 5 || c > 200;
-    	System.out.println(ch);
+//    	System.out.println(ch);
         if (ch) {
             return "Error: Out of range";
         }
