@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  */
 public class AppTest {
 	Task2_Q1And2 tester = new Task2_Q1And2();
-	Task2_Q1And2 TriangleClassifier = new Task2_Q1And2();
+//	Task2_Q1And2 TriangleClassifier = new Task2_Q1And2();
 /**
  * Rigorous Test :-)
  */
@@ -76,50 +76,49 @@ public class AppTest {
         assertEquals("Not a quadratic equation", tester.classifyRoots(0, 3, 4));
     }
     
-    // 	
     
     @Test
     public void TC1() {
-        assertEquals("Not a Triangle", TriangleClassifier.classifyTriangle(2, 2, 5));
+        assertEquals("Not a Triangle", tester.classifyTriangle(2, 2, 5));
     }
 
     @Test
     public void TC2() {
-        assertEquals("Not a Triangle", TriangleClassifier.classifyTriangle(2, 5, 2));
+        assertEquals("Not a Triangle", tester.classifyTriangle(2, 5, 2));
     }
 
     @Test
     public void TC3() {
-        assertEquals("Not a Triangle", TriangleClassifier.classifyTriangle(5, 2, 2));
+        assertEquals("Not a Triangle", tester.classifyTriangle(5, 2, 2));
     }
 
     @Test
     public void TC4() {
-        assertEquals("Scalene", TriangleClassifier.classifyTriangle(6, 7, 8));
+        assertEquals("Scalene", tester.classifyTriangle(6, 7, 8));
     }
 
     @Test
     public void TC5() {
-        assertEquals("Isosceles", TriangleClassifier.classifyTriangle(5, 5, 7));
+        assertEquals("Isosceles", tester.classifyTriangle(5, 5, 7));
     }
 
     @Test
     public void TC6() {
-        assertEquals("Isosceles", TriangleClassifier.classifyTriangle(7, 5, 5));
+        assertEquals("Isosceles", tester.classifyTriangle(7, 5, 5));
     }
 
     @Test
     public void TC7() {
-        assertEquals("Isosceles", TriangleClassifier.classifyTriangle(5, 7, 5));
+        assertEquals("Isosceles", tester.classifyTriangle(5, 7, 5));
     }
 
     @Test
     public void TC8() {
-        assertEquals("Equilateral", TriangleClassifier.classifyTriangle(6, 6, 6));
+        assertEquals("Equilateral", tester.classifyTriangle(6, 6, 6));
     }
 
     @Test
     public void TC9() {
-        assertEquals("Not a Triangle", TriangleClassifier.classifyTriangle(1, 1, 10));
+        assertEquals("Not a Triangle", tester.classifyTriangle(1, 1, 10));
     }
 }

@@ -32,7 +32,7 @@ public class Task2_Q1And2 {
     }
     
     //Ex2
-    public static String classifyTriangle(int a, int b, int c) {
+    public String classifyTriangle(int a, int b, int c) {
         // Check if inputs can form a triangle
         if (a + b <= c || b + c <= a || c + a <= b) {
             return "Not a Triangle";
